@@ -1,76 +1,25 @@
-import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class LongestSubstring {
 
 	 public static int lengthOfLongestSubstring(String s) {
 		 
 
-		 int biggest = 0;
-		 int current = 0;
-		
-		 HashMap<Character, Integer> alphabet = new HashMap<Character, Integer>();
-		 
-		 HashMap<Integer, Character> sstring = new HashMap<Integer, Character>();
-		 
-		 
-		 for (int i = 0; i <= 25; i++) { 
-		        //alphabet.put((char) ('a' + i), i); 
-		        
-		       // System.out.println((char) ('a' + i) + " " +  i);
-		    } // load hashmap
-		 
-	        
-		 for (int i = 0; i < s.length(); i++){
-			    char c = s.charAt(i);        
-			    //Process char
-			    
-			    System.out.print(c);
-			    
-			
-			 
-			 if (!sstring.containsKey(alphabet.get(c))){
-				
-				 
-				 
-				 
-				 sstring.put(alphabet.get(c), c); 
-				 System.out.println(sstring.entrySet());
-				 
-				 System.out.println(sstring.size());
-				   if (sstring.size() > biggest){
-						 
-						 biggest = sstring.size();
-					 }
-				
-			 }
-			    
-			 
-			
-			 
-			 else{ 
-				 
-				 
-             if (sstring.size() - 1 == 0){
-            	 
-            	i = i - 1; 
-            	sstring.clear();
-    			current = 0;
-             } 
-             else{
-			 i = i - (sstring.size()-1);      
-			 sstring.clear();
-			 current = 0;
-			 
-             }
-			
-			 }
-			 
-		
-			    
-			}
-		 
-		 
-		 return biggest;
+	      int n = s.length();
+	        Set<Character> set = new HashSet<>();
+	        int ans = 0, i = 0, j = 0;
+	        while (i < n && j < n) {
+	            // try to extend the range [i, j]
+	            if (!set.contains(s.charAt(j))){
+	                set.add(s.charAt(j++));
+	                ans = Math.max(ans, j - i);
+	            }
+	            else {
+	                set.remove(s.charAt(i++));
+	            }
+	        }
+	        return ans;
 	    }
 	 
 	 
@@ -78,7 +27,7 @@ public class LongestSubstring {
 	 public static void main(String[] args){
 {
 		 
-		 String s = "dvdf";
+		 String s = "dvdfskdjhfkajsdhg jahgfjksdhfgajhdflaeuikuytflasgaekjghdfkljhgskljdfhglksjhdfgkshdfgkljshgkjsdklfjgiqweurpiotxvnmc";
 		 
 		 System.out.println(lengthOfLongestSubstring(s));
 		 
