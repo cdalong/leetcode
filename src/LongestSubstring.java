@@ -30,20 +30,6 @@ public class LongestSubstring {
 	        }
 	        return ans;
 	    }
-	 
-	 
-	 
-	 public static void main(String[] args){
-{
-		 
-		 String s = "dvdf";
-		 
-		 System.out.println(lengthOfLongestSubstring(s));
-		 
-	 }
-	
-	
-}
 }
 
 
