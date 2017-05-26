@@ -13,10 +13,19 @@ public class LongestSubstring {
 	            // try to extend the range [i, j]
 	            if (!set.contains(s.charAt(j))){
 	                set.add(s.charAt(j++));
+	             
+	                System.out.println(set.toString());
+	                
+	                
 	                ans = Math.max(ans, j - i);
+	                
+	                System.out.println("Ans: " + ans);
 	            }
 	            else {
 	                set.remove(s.charAt(i++));
+	                
+	                System.out.println(set.toString());
+	                
 	            }
 	        }
 	        return ans;
@@ -27,7 +36,7 @@ public class LongestSubstring {
 	 public static void main(String[] args){
 {
 		 
-		 String s = "dvdfskdjhfkajsdhg jahgfjksdhfgajhdflaeuikuytflasgaekjghdfkljhgskljdfhglksjhdfgkshdfgkljshgkjsdklfjgiqweurpiotxvnmc";
+		 String s = "dvdf";
 		 
 		 System.out.println(lengthOfLongestSubstring(s));
 		 
