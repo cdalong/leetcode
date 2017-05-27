@@ -9,7 +9,7 @@ public class BestBuy {
 		 }
 		 
 		 int max = 0;
-		 int runningminimum = prices[0];
+		 int runningminimum = 0;
 		 
 		 for (int i = 0; i <prices.length; i++){
 			 
