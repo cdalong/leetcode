@@ -18,7 +18,7 @@ public class Solution {
             
         }
             
-            
+
         }
       return null;
       //not in the array
