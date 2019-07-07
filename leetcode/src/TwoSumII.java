@@ -31,20 +31,5 @@ public class TwoSumII {
   return null;
   //not in the array
 }
-	
-	
-	
-	
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		int[] numbers = new int[4];
-		
-		
-		
-		
-		
-	}
 
 }

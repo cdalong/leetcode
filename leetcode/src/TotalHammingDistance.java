@@ -4,8 +4,7 @@ public class TotalHammingDistance {
 	/**
 	 * @param args
 	 */
-	
-	
+
 	
 public int totalHammingDistance(int[] nums) {
         
@@ -44,9 +43,4 @@ public int totalHammingDistance(int[] nums) {
     	}
     	return count;
     }
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

@@ -1,3 +1,6 @@
+public class JudgeCircle{
+
+
 public boolean judgeCircle(String moves) {
         
         int xplane = 0;
@@ -43,3 +46,5 @@ public boolean judgeCircle(String moves) {
         }
         
     }
+
+}
