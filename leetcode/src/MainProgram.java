@@ -24,6 +24,15 @@ public class MainProgram {
 
     System.out.println(parenthesis.findLongestValidParenthesis(input3));
 
+    int[][] matrix = { 
+    {1,   1}
+    };
+
+
+    SearchMatrix smatrix = new SearchMatrix();
+
+    System.out.println(smatrix.findTheNumber(matrix, 0));
+
     }
 
 }
