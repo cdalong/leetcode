@@ -29,18 +29,6 @@ public class BestBuy {
 		 return max;
 		 
 	    }
-	
-	
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		
-		int[] test = {2,1,4};
-		
-		
-		maxProfit(test);
-		
-	}
 
 }

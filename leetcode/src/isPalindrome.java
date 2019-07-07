@@ -16,7 +16,7 @@ public class isPalindrome {
 	 */
 	
 	
-	public boolean isPalindrome(int x) {
+	public boolean Palindrome(int x) {
 		
 		int n = x;
 		

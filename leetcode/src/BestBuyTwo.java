@@ -13,9 +13,6 @@ public class BestBuyTwo{
 
         }
 
-
-        int runningminimum = prices[0];
-        int max = 0;
         int totalProfit  = 0;
 
         for (int i = 0; i < prices.length - 1; i ++)   

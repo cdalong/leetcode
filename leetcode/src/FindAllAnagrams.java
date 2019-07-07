@@ -6,16 +6,11 @@ public class FindAllAnagrams {
 	
 	
 public static List<Integer> findAnagrams(String s, String p) {
-     
-	
+     	
 	int psize = p.length();
 	int[] pfreq = new int[26];
 	
 	List<Integer> answer = new ArrayList<Integer>();
-	
-	
-	
-	
 	
 	for (int i = 0 ; i < psize ; i++){
 		
@@ -40,27 +35,13 @@ public static List<Integer> findAnagrams(String s, String p) {
 		if (Arrays.equals(sfreq, pfreq)){
 			
 			answer.add(j); // add the start of the anagram
-			
-			
+		
 		}
 		
-			
 		
 	}
-	
 	
 	return answer; 
     }
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		String s = "abab";
-		String p = "ab";
-		
-		
-		System.out.println(findAnagrams(s, p));
-		
-	}
 
 }
