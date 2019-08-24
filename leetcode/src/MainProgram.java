@@ -33,6 +33,10 @@ public class MainProgram {
 
     System.out.println(smatrix.findTheNumber(matrix, 0));
 
+
+    LCA lca =  new LCA();
+    System.out.println("Lca main: " + lca.main());
+
     }
 
 }
